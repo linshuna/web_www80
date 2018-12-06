@@ -1,0 +1,139 @@
+.main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background: url('../images/login-bg.png') no-repeat top center;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.main h5{
+   font-size: 18px;
+}
+.main .message{
+    width: 45%;
+    padding-top: 20px;
+    margin: 60px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+}
+.message .content{
+    /* display: none; */
+}
+.message  .top {
+    text-align: left;
+    margin: 0px 0 20px 20px ;
+}
+.message .top img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.message .top span{
+    color: #c7c800;
+}
+.message .title{
+    margin: 20px auto;
+}
+.message .quesStyle{
+    margin-bottom: 20px;
+}
+.message .quesContent{
+    margin-bottom: 20px;
+}
+.message  .ans{
+    list-style-type: upper-alpha;
+    text-align: center;
+    margin-left: 65%;
+    transform: translateX(-50%);
+}
+.message  .ans li{
+    text-align: left;
+    position: relative;
+    height: 35px;
+}
+.message  .ans li input{
+    width: 20px;
+    height: 20px;
+    left: -60px;
+    position: absolute;
+}
+.money{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.money img{
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+}
+.footer{
+    margin-bottom: 20px;
+}
+.footer input{
+    font-size: 18px;
+    letter-spacing: 2px;
+    width:160px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #528efc;
+    border: none;
+    outline: medium;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* 显示隐藏 */
+.show{
+    display: none;
+}
+.hide{
+    display: block;
+}
+/* 测试结果部分 */
+.message .result{
+    width: 100%;
+    padding-top: 20px;
+    margin: 60px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+    display: none;
+}
+.message .result .examResult{
+    width: 246px;
+    height: 246px;
+    margin: 0 auto ;
+    line-height: 54px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: 1px dashed #333;
+    text-align: center;
+}
+.message .result .examResult p{
+    text-align: center;
+}
+.message .result .examResult .examResultContent{
+    color: red;
+}
+.message .result .examResult input{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: medium;
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #4c8ffa;
+    cursor: pointer;
+}

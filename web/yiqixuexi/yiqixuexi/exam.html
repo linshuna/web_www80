@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/exam.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h5>测试</h5>
+        <div class="message">
+            <div class="top">
+                <img src="./images/back.png" ><span>返回上一页</span>
+            </div>
+            <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+            <div class="content">
+                <p class="title">第一题</p>     
+                <p class="quesStyle">选择题</p>     
+                <p class="quesContent">为什么我和丽丽的肚子都那么疼？</p>
+                <ol class="ans">
+                    <li><input type="checkbox" >因为蛋糕有毒</li>
+                    <li><input type="checkbox" >因为蛋糕有毒</li>
+                    <li><input type="checkbox" >因为蛋糕有毒</li>
+                    <li><input type="checkbox" >因为蛋糕有毒</li>
+                </ol>    
+                <div class="money">
+                    <img src="../yiqixuexi/images/light.png" alt="">
+                    <img src="../yiqixuexi/images/light.png" alt="">
+                    <img src="../yiqixuexi/images/light.png" alt="">
+                    <img src="../yiqixuexi/images/light.png" alt="">
+                    <img src="../yiqixuexi/images/grey.png" alt="">
+                </div>
+                <div class="footer">
+                    <input type="button" id="confirmBtn" value="提交答案">
+                </div>
+            </div>
+            <!-- 完成测试部分 -->
+            <div class="result">
+                <div class="avator">
+                    <img src="" alt="">
+                </div>
+                <div class="examResult">
+                    <p>测试结果</p>
+                    <p class="examResultContent">
+                        优
+                    </p>
+                    <input type="button" id="finishExam" value="完成测试">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var confirmAns = document.getElementById('confirmBtn');
+        var finishExam = document.getElementById('finishExam');
+        var content = document.getElementsByClassName('content')[0];
+        var result = document.getElementsByClassName('result')[0];
+        confirmAns.onclick=function(){
+            //请求提交答案的接口，请求成功 显示完成测试
+            content.style.display = 'none'
+            result.style.display = 'block'
+        }
+        finishExam.onclick=function(){
+            content.style.display = 'block'
+            result.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

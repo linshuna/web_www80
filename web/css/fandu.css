@@ -1,0 +1,143 @@
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: url('../images/test-bg.png')no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.wh10{
+    width: 10px;
+    height: 10px;
+}
+.wh20{
+    width: 20px;
+    height: 20px;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .logo{
+    margin-top: 20px;
+    margin-left: -40%;
+}
+.main .logo a{
+    font-size: 30px;
+}
+.main .changeModel{
+    margin-left: 70%;
+    width: 42px;
+    height: 20px;
+    border-radius: 10PX;
+    background-color: #666;
+    cursor: pointer;
+}
+.main .changeModel div{
+    width: 50%;
+    height: 20px;
+    border-radius: 20PX;
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+}
+.main .changeModel #ldhy{
+    background-color: transparent;
+}
+.main .mainContent{
+    /* margin-top: -30px; */
+    position: relative;
+}
+.main .mainContent .top h4{
+    margin: 20px 0;
+    color: #5385f9;
+}
+/* 朗读内容部分 */
+.main .mainContent .content{
+    height: 300px;
+    margin-top: 40px;
+    text-align: center;
+    /*background: linear-gradient(to top,rgba(255,255,255,0.8), rgba(255,255,255,0));*/
+}
+.main .mainContent .content P{
+    height: 80px;
+}
+.main .mainContent .bottom{
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    /* margin-left: 20%; */
+    /* transform: translateX(-50%); */
+    padding-left: 400px;
+    box-sizing: border-box;
+}
+.main .mainContent .bottom .finish{
+    position: relative;
+    width: 90px;
+    cursor: pointer;
+}
+.main .mainContent .bottom .finish span{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+/* 遮罩 */
+.msk{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+.msk .mskContent{
+    width: 30%;
+    height: 45%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.msk .mskContent p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8%;
+    z-index: 10;
+}
+.msk .mskContent .passImg{
+    display: inline-block;
+    width: 252px;
+    height: 252px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.msk .mskContent .closeImg{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+/*按钮样式*/
+.btnStyle{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: medium;
+    border-radius: 20px;
+    background-color: #c5c804;
+}
+

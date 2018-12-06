@@ -1,0 +1,234 @@
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: url('../images/test-bg.png')no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.wh10{
+    width: 10px;
+    height: 10px;
+}
+.wh20{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .logo{
+    padding-top: 20px;
+    margin-left: -40%;
+}
+.main .logo a{
+    font-size: 30px;
+}
+.main .changeModel{
+    margin-left: 70%;
+    width: 42px;
+    height: 20px;
+    border-radius: 10PX;
+    background-color: #666;
+    cursor: pointer;
+}
+.main .changeModel div{
+    width: 50%;
+    height: 20px;
+    border-radius: 20PX;
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+}
+.main .changeModel #ldhy{
+    background-color: transparent;
+}
+.main .mainContent{
+    /* margin-top: -30px; */
+    position: relative;
+}
+.main .mainContent .top h4{
+    margin: 20px 0;
+    color: blue;
+}
+/* 朗读内容部分 */
+.main .mainContent .content{
+    margin-top: 40px;
+    text-align: center;
+   /* background: linear-gradient(to top,rgba(255,255,255,0.8), rgba(255,255,255,0));*/
+}
+.main .mainContent .content P{
+    height: 80px;
+}
+/* 底部按钮 */
+.main .mainContent .footer{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: space-around;
+    background: #fff;
+}
+.main .mainContent .footer img{
+    /* display: inline-block; */
+    float: left;
+    cursor: pointer;
+}
+.main .mainContent .footer ul{
+    margin: 0 10px;
+}
+.main .mainContent .footer ul li{
+    /* background: url('../images/select.png')no-repeat; */
+    background-size: 10px 10px;
+    background-position: 0 0;
+}
+/* eded95 */
+.main .mainContent .footer ul li span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: #eded95;
+    cursor: pointer;
+}
+.footer ul li span.active{
+  background-color: #96a117!important;
+}
+.main .mainContent .wifi{
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+}
+/* 遮罩 */
+.msk{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+.msk .mskContent{
+    width: 30%;
+    height: 45%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.msk .mskContent p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8%;
+    z-index: 10;
+}
+.msk .mskContent .passImg{
+    display: inline-block;
+    width: 252px;
+    height: 252px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.msk .mskContent .closeImg{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+/* 后退按钮 */
+.ldFinsih{
+    width: 50%;
+    height: 80%;
+    /* margin-top: -185px; */
+    margin: 40px 0 0 300px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.ldFinsih .back {
+    text-align: left;
+    padding: 15px 0;
+    box-sizing: border-box;
+    margin: 0px 0 20px 20px ;
+}
+.ldFinsih .back img{
+    width:40px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ldFinsih .back span{
+    color: #c7c800;
+}
+.ldFinsih .scoreList{
+   margin-top: 10px;
+    margin-left: 55%;
+    transform: translateX(-50%);
+}
+.ldFinsih .top{
+    /* margin-top: -30px; */
+    position: absolute;
+    top: -30px;
+    left: 50%;
+}
+ table,th,td{
+    border: 1px solid transparent;
+}
+.ldFinsih .scoreList thead tr th{
+   width: 90px;
+}
+tr{
+    border-bottom: 2px solid #000;
+}
+.ldFinsih .tupian img{
+    width: 80px;
+    height: 80px;
+    border-radius: 200%;
+    margin-bottom: 20px;
+}
+.ldFinsih .center footer{
+    width: 46%;
+    margin-left: 55%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.ldFinsih .center footer input{
+   letter-spacing: 2px;
+   font-size: 16px;
+}
+/*按钮样式*/
+.btnStyle{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: medium;
+    border-radius: 20px;
+    background-color: #c5c804;
+}
+

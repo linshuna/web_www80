@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+	<title>课程表</title>
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 课程表样式 -->
+	<link rel="stylesheet" href="css/fandu.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="main ">
+        <div class="logo"><a href="javascript:;">LOGO</a></div>
+        <div class="changeModel">
+            <div id="ld"></div>
+            <div id="ldhy"></div>
+        </div>
+        <div class="mainContent ">
+            <div class="top">
+                <p class="ldTitle">范读</p>
+                <h4 >第一章：宝葫芦的秘密</h4>
+                <p style="font-size:14px;">章节:<span>pm-12</span> </p>
+                <div class="content">
+                    <!-- <p> 但是她特别喜爱玫瑰花，因此他有</p>
+                    <p>各种各样的玫瑰花：从那长着能发出苹果香味的绿叶的野玫瑰，</p>
+                    <p>一直到最可爱的，普罗旺斯的一个</p> -->
+                </div>
+                <div class="bottom">
+                    <audio style="width:60%;" controls src="./mp3/去年夏天.mp3"></audio>
+                    <div class="finish">
+                        <img class="wh20" src="./images/finish.png" alt="">
+                        <span style="color:#5385f9;">完成范读</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/tabTable.js"></script>
+		
+    </div>
+    <div class="msk hide">
+        <div class="mskContent" >
+            <p style="color:#74a6ec;">还差一点，继续努力</p>
+            <img class="passImg" src="./images/nopass.png" alt="">
+            <img class="closeImg" src="./images/cancel.png" >
+        </div>
+    </div>
+    <script>
+        let ld = document.getElementById('ld');
+        let ldhy = document.getElementById('ldhy');
+        let ldTitle = document.getElementsByClassName('ldTitle')[0];//朗读二字
+        let footer = document.getElementsByClassName('footer')[0];//分页
+        let mainContent = document.getElementsByClassName('mainContent')[0];
+        ld.onclick=function(){
+            ldhy.style.backgroundColor = 'transparent'
+            ld.style.backgroundColor = '#fff'
+            document.body.style.backgroundImage = "url('./images/test-bg.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundPosition = "cover";
+            mainContent.style.backgroundImage = "none";
+            mainContent.style.color = '#000';
+            ldTitle.style.color= "#000";
+            footer.style.backgroundColor = 'transparent';
+        }
+        ldhy.onclick = function(){
+            ldhy.style.backgroundColor = '#fff'
+            ld.style.backgroundColor = 'transparent'
+            document.body.style.backgroundImage = "url('./images/ldhy.png')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundPosition = "cover";
+            mainContent.style.color = '#fff';
+            mainContent.style.backgroundImage = "url('./images/cd.png')"
+            mainContent.style.backgroundRepeat = "no-repeat"
+            mainContent.style.backgroundPosition = "50% 50%";
+            ldTitle.style.color= "#fff";
+            footer.style.backgroundColor = '#fff';
+        }
+        let msk = document.getElementsByClassName('msk')[0];
+        let main = document.getElementsByClassName('main')[0];
+        let ldFinsih = document.getElementsByClassName('ldFinsih')[0];
+        let changeModel = document.getElementsByClassName('changeModel')[0];
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付</title>
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- 课程表样式 -->
+	<link rel="stylesheet" href="./css/pay.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head">
+			<div class="logo">
+				<!-- <img src="" alt="Logo"> -->
+				<a href="/"><span style="font-size: 30px">LOGO</span></a>
+			</div>
+			<div class="daohan">
+				<ul>
+					<li><a href="">课程表</a></li>
+					<li><a href="">学习+圈子</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="">我的</a></li>
+				</ul>
+				<a href="#">
+					<div class="ant-botton">
+						<div class="login-icon"><img src="images/login.png" alt=""></div>
+						
+						<span>登录</span>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</header>
+	<div class="main clearfix">
+		<div class="mainContent hide">
+			<ul>
+                <li >
+                    <span>名师导读版</span>
+                    <img src="./images/avator.jpg" alt="">
+                    <span>￥88.88</span>
+                    <input class="hide" type="button" value="选择商品">
+                </li>
+                <li>
+                    <span>基础导读版</span>
+                    <img src="./images/avator.jpg" alt="">
+                    <span>￥88.88</span>
+                    <input  class="hide choose" type="button" value="选择商品">
+                </li>
+            </ul>
+        </div>
+        <!-- 支付方式 -->
+        <div class="payMethods">
+                <div id="back" class="back">
+                    <img src="./images/back.png" ><span>返回上一页</span>
+                </div>
+                <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+                <div class="payments">
+                    <p>选择支付方式</p>
+                    <div class="twoPay">
+                        <span>
+                            (￥10)<br>账户余额
+                        </span>
+                        <a href="javascript:;">支付宝</a>
+                        <a href="javascript:;">微信</a>
+                    </div>
+                    <!-- 优惠券 -->
+                    <div class="coupon">
+                        <p><span>优惠券</span><span>暂无<img src="./images/right.png" alt=""></span></p>
+                    </div>
+                    <input type="button" value="确定支付">
+                </div>
+        </div>
+	</div>
+	<script>
+        var back = document.getElementById('back');
+        var choose = document.getElementsByClassName('choose')[0];
+        var payMethods = document.getElementsByClassName('payMethods')[0];
+        var mainContent = document.getElementsByClassName('mainContent')[0];
+        back.onclick= function(){
+            payMethods.style.display= 'none'
+            mainContent.style.display= 'block'
+        }
+        choose.onclick= function(){
+            payMethods.style.display= 'block'
+            mainContent.style.display= 'none'
+        }
+	</script>
+</body>
+</html>

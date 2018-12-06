@@ -1,0 +1,133 @@
+
+
+
+.main .detail .right input{
+    width:150px;
+    height:30px;
+    outline: medium;
+    border:none;
+    color: #fff;
+    border-radius: 10px;
+    background-color:red;
+}
+.hide{
+    display: none;
+}
+.top{
+    width: 60%;
+    height: 85%;
+    /* margin-top: -185px; */
+    margin: 40px auto 200px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+/* 后退按钮 */
+.top .back {
+    text-align: left;
+    padding-top: 20px;
+    margin: 0px 0 20px 20px ;
+}
+.top .back img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.top .back span{
+    color: #c7c800;
+}
+.main .top .detail{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+}
+.main .top .detail .left{
+    /* width: 80%; */
+    margin: 10px 0 0 20px;
+}
+.main .top .detail .left>div{
+    width: 100%;
+    height: 70%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+.main .top .detail .left>div>img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.main .top .detail .left>ul{
+    margin:20px 0 0 10px;
+    width: 100%;
+}
+.main .top .detail .left>ul>li img{
+    width: 80px;
+    height: 100px;
+    border: 10px solid #ddd;
+    border-radius: 10px;
+}
+.main .top .detail .right{
+    width: 40%;
+}
+.main .top .detail .right p{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+.main .top .detail .right input{
+    margin-top: 155px;
+    margin-left: -260px;
+}
+/* 详情和目录 */
+.detailAndList{
+    width: 60%;
+    height: 85%;
+    margin: -185px auto 0;
+    text-align: center;
+    background-color: #fff;
+    text-align: left;
+}
+.detailAndList>div{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.detailAndList .detailContent, .detailAndList .listContent{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    
+}
+.detailAndList .detailContent .Content{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+.wh20{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.detailAndList .listContent ul{
+    width: 90%;
+    margin: 0 auto;
+}
+.detailAndList .listContent ul li{
+    width: 100%;
+    text-align: left;
+    box-shadow: 2px 2px rgba(222, 222, 222, .8);
+}
+.detailAndList .listContent ul li div{
+    display: flex;
+    justify-content: space-around;
+}
+.detailAndList .listContent ul li div span{
+    display: inline-block;
+    width: 100px;
+}

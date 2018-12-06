@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程表</title>
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 课程表样式 -->
+	<link rel="stylesheet" href="css/classSchedule.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/sess.js"></script>
+	<script src="js/APIConnection.min.js"></script>
+    <script src="js/stacktrace.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head">
+			<div class="logo">
+				<!-- <img src="" alt="Logo"> -->
+				<a href="/"><span style="font-size: 30px">LOGO</span></a>
+			</div>
+			<div class="daohan" id="daohan">
+				<ul>
+					<li><a href="classSchedule.html" class="active">课程表</a></li>
+					<li><a href="studyEncircle.html">学习+圈子</a></li>
+					<li><a href="find.html">发现</a></li>
+					<li><a href="my.html">我的</a></li>
+				</ul>
+				<a class="user" href="login.html">
+					<div class="ant-botton">
+						<div class="login-icon"><img src="images/login.png" alt=""></div>
+						
+						<span>登录</span>
+					</div>
+				</a>
+				<a class="user">
+					<div class="ant-botton">
+						<div class="login-icon"><img src="images/login.png" alt=""></div>
+						
+						<span id="user"></span>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</header>
+	<script src="./js/header.js"></script>
+	<div class="main">
+		<div class="title-box-tab">
+			<div class="title-tab">
+				<div class="tab tab-index">课程表</div>
+			    <div class="tab">榜单</div>
+			</div>
+		</div>
+		<script src="js/tabTable.js"></script>
+		<div class="classSchedule classIndex">
+			<div  class="courseTableList">
+				<div class="titleTable">
+					<span >宝葫芦的秘密</span>
+				</div>
+				
+				<div  class="courseTable">
+					<table  style="width: 100%">
+						<thead>
+							<th>序号</th>
+							<th>阅读<br>章节</th>
+							<th>阅读<br>页码</th>
+							<th>起始<br>时间</th>
+							<th>完成<br>时间</th>
+							<th>阅读<br>天数</th>
+						</thead>
+						<tbody id="schedule">
+							<tr>
+                <td>1</td>
+                <td>意外的到宝葫芦</td>
+                <td>P11-P12</td>
+                <td>08:06</td>
+                <td>09:06</td>
+                <td>4天</td>
+              </tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging">
+					<span class="paging-boder">上一页</span>
+					<span>
+						<a class="paging-boder paging-index">1</a>
+					</span>
+					<span class="paging-boder">下一页</span>
+					<span>共</span>
+					<span><input class="paging-boder" type="text"></span>
+					<span>页</span>
+					<span id="send" class="paging-boder " style="background: #4b93e8;border-color: #fff;color: #fff">跳转</span>
+					
+				</div>
+			</div>
+			
+		</div>
+		<!-- 榜单 -->
+		<div class="classSchedule">
+			<div  class="listTable">
+				<div class="title">
+					<img src="images/bsym.png">
+				</div>
+				<div class="selectChapter">
+          <!-- 章节 -->
+					<!-- <select name="" id="chapter" class="chapterList">
+            <option value="1">章节 1</option>
+            <option value="2">章节 2</option>
+          </select> -->
+          <p class="chapterList">
+            <span>章节1</span>
+            <img src="images/arrowBtm.png" alt="">
+          </p>
+          <ul id="be-select" tabindex="0">
+            <li>章节1</li>
+            <li>章节2</li>
+            <li>章节3</li>
+            <li>章节4</li>
+          </ul>
+				</div>
+				<!-- <hr style="width:100%;margin: 50px auto 0;background-color:#eee;height:0px;"> -->
+				<div class="NameList" style="margin: 50px auto;">
+          <!-- 名单 -->
+          <table  style="width: 100%;" id="billboardWrap">
+            <tbody>
+              <tr>
+                <td>张三三</td>
+                <td>张三一</td>
+                <td>张三二</td>
+              </tr>
+              <tr>
+                <td>张三三</td>
+                <td>张三一</td>
+                <td>张三二</td>
+              </tr>
+            </tbody>
+          </table>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<script>
+			// console.log(JSON.parse(getCookie("login")))
+			var param = {
+				"obj":"curriculumSchedule",
+				"act":"get"
+			}
+			send(param)
+			setTimeout(getdata,500);
+			function getdata(){
+				//课程表
+				var trsum = ''
+				var Schedule = document.getElementById('schedule');
+				for(var i = 0 ; i<data.homeworkList.length ; i++){
+					var timestampStart = new Date(data.homeworkList[i].startTime).toTimeString().substr(0, 8);//直接用 new Date(时间戳) 格式转化获得当前时间
+					var timestampfinish = new Date(data.homeworkList[i].finishTime).toTimeString().substr(0, 8);
+
+					console.log(timestampStart);
+
+					console.log( ); 
+					trsum += '<tr><td>'+ data.homeworkList[i].chapterNum +'</td><td>'+ data.homeworkList[i].chapterName +'</td><td>'+ data.homeworkList[i].pageSpacing +'</td><td>'+ timestampStart +'</td><td>'+ timestampfinish +'</td><td>'+ data.homeworkList[i].readDays +'</td></tr>'
+				}
+				Schedule.innerHTML = trsum;
+				// 榜单
+				var chapter = document.getElementById('chapter');
+				for(var i = 0 ; i<data.homeworkList.length ; i++){
+					chapter.innerHTML += '<option value="'+data.homeworkList[i].chapterId+'">章节'+data.homeworkList[i].chapterNum+'</option>'
+				}
+				var optionValue = chapter.value;
+				var selectParam = {
+					"obj":"leaderboard",
+					"act":"get"
+				}
+				selectParam.chapterId=optionValue;
+				chapterSend(selectParam);
+				setTimeout("chapter()",500);
+			}
+
+			function chapter(){
+				var namelist = document.getElementsByClassName('NameList')[0];
+				var name = '';
+				for(var i = 0;i<charpter.leaderboard.length;i++){
+					name +='<span>' + charpter.leaderboard[i].name + '</span>'
+				}
+				namelist.innerHTML =name;
+				// console.log(charpter);
+      }
+      // 选择章节
+      var chapterListObj = $(".chapterList")
+      var beSelectWrap = $("#be-select");
+      var beSelectList = $("#be-select li");
+      chapterListObj.click(function(){
+        beSelectWrap.stop().toggle()
+      })
+      beSelectWrap.on("click","li",function(index,item){
+        var checkedStr = $(this).text()
+        chapterListObj.find("span").text(checkedStr)
+        $(this).parent().stop().toggle()
+      })
+		</script>
+	</div>
+</body>
+</html>

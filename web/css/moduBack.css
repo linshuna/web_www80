@@ -1,0 +1,237 @@
+.main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background: url('../images/test-bg.png') no-repeat top center;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.main h5{
+   font-size: 18px;
+}
+.main .message{
+    width: 45%;
+    padding-top: 20px;
+    margin: 60px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
+}
+.message .content{
+    width: 100%;
+    height: 500px;
+    /* display: none; */
+    background: url("../yiqixuexi/images/moduBg.png") no-repeat;
+    background-size: 100% 108%;
+    background-position: 0 -30px;
+}
+.message  .top {
+    text-align: left;
+    margin: 0px 0 20px 20px ;
+}
+.message .top img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.message .top span{
+    color: #c7c800;
+}
+.message .title{
+    padding: 10px 0;
+    position: relative;
+}
+.message .title img{
+  width: 150px;
+}
+.message .title span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 20px;
+  transform: translate(-50%,-50%);
+  color: #4b93e8;
+  font-weight: 600;
+}
+.money{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.money img{
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+}
+.footer{
+    margin: 40px 0;
+}
+
+.footer .ans{
+    margin: 10px auto;
+    width: 160px;
+    height: 32px;
+    line-height: 18px;
+    padding: 5px 10px;
+    border: 1px solid #c0cf2d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffa0;
+}
+.footer .ans span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #c6c21c;
+    color: #fff;
+}
+.backMd{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.wrongBack .cutDown img{
+    width: 300px;
+    height: 200px;
+}
+.wrongBack .cutDown{
+    position: relative;
+}
+.wrongBack .cutDown .cutDownTime{
+    position: absolute;
+    left: 45%;
+    top: 38%;
+}
+.scoreList{
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    margin:  0 auto;
+}
+.scoreList table{
+    width: 260px;
+    margin:  15px auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: none;
+}
+/* table tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+} */
+.firstTr{
+    background-color: #c3c70c;
+}
+table, th, td{
+  border: none;
+}
+th,td{
+  border-left: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+th:first-child,td:first-child{
+  border-left: none;
+  
+}
+tr:last-child td{
+  border-bottom: none;
+}
+tr td:first-child{
+  padding-left: 8px;
+}
+tr{
+    height: 30px;
+}
+td{
+    padding: 0 2px;
+    box-sizing: border-box;
+    color: #528efc;
+}
+table tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+tbody{
+  border-radius: 14px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+/* tr:last-child td{
+  box-shadow: 0 2px 1px rgba(0,0,0,.2);
+}
+th:last-child,td:last-child{
+  box-shadow: 2px 0 1px rgba(0,0,0,.2);
+}
+tr:last-child td:last-child{
+  box-shadow: 2px 2px 1px rgba(0,0,0,.2);
+} */
+
+
+
+
+.scoreList img{
+    width: 20px;
+    height: 20px;
+    margin-top: 45px;
+}
+.footerW {
+    width: 50%;
+    margin:  30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footerW button{
+    font-size: 16px;
+    letter-spacing: 2px;
+    width:130px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #528efc;
+    border: none;
+    outline: medium;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footerW button img{
+  width: 16px;
+  height: auto;
+  vertical-align: middle;
+}
+.footerW button span{
+  vertical-align: middle;
+}
+.cutDownTime{
+    margin-bottom: 10px;
+}
+/* 定时器 */
+#m,#s,#m2,#s2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #484954;
+}

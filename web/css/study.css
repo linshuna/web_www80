@@ -1,0 +1,191 @@
+
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .mainTop{
+    width: 100%;
+    height: 500px;
+    background: url('../images/top-bg.png') #fff no-repeat;
+    background-size: 100%;
+}
+.main .mainTop .zhuangpan{
+	position: relative;
+	width: 210px;
+	height: 210px;
+	top: 150px;
+	margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+	/*background: #000;*/
+}
+.main .mainTop .zhuangpan .Pointer{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background: #000;*/
+}
+.main .mainTop .zhuangpan .Pointer img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-72deg);
+}
+.main .mainTop .zhuangpan .triangle{
+    position: absolute;
+    width: 125px;
+	height: 106px;
+    border-left-width: 0px;
+    top: 0;
+    left: calc(50% - 63px);
+    transform-origin: 50% 100%;
+    background-size: 100%;
+}
+.main .mainTop .zhuangpan .triangle .triangleDiv{
+    /*position: relative;*/
+    margin:0 auto;
+    text-align: center;
+}
+.main .mainTop .zhuangpan .triangle .triangleDiv img{
+    display: block;
+    margin:15px auto 5px;
+    width: 20px;
+}
+.main .mainTop .zhuangpan .triangle .triangleDiv span{
+    color: #fff;
+}
+.main .mainTop .share{
+    position: relative;
+    width: 1000px;
+    top: 200px;
+    font-size: 14px;
+    text-align: center;
+
+}
+.main .mainTop .share .shareBotton{
+    background: #dad9d9;
+    border-radius: 10px;
+    color: rgba(0,0,0,.6);
+    padding: 10px 20px;
+    margin: 0 100px;
+    cursor: pointer;
+}
+.main .mainTop .share .shareIndex{
+    background: #5898ff;
+    color: #fff;
+}
+.main .shareContent{
+
+}
+.main .shareContent .sharelist {
+    height: 550px;
+    padding: 20px 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+.main .shareContent .sharelist .shareHeader{
+   height: 100px; 
+    border-bottom: 2px rgba(0,0,0,.1) solid;
+}
+.main .shareContent .sharelist .headImg{
+    display: inline-block;
+    margin: 10px;
+    width: 40px;
+}
+.main .shareContent .sharelist .shareHeader div span{
+    line-height: 30px;
+}
+.main .shareContent .sharelist .shareHeader div span:last-child{
+    color: rgba(0,0,0,.5);
+}
+.main .shareContent .sharelist .shareText{
+    padding: 20px 87px;
+    border-bottom: 2px rgba(0,0,0,.1) solid;
+}
+/*.main .shareContent .sharelist .shareText .score div span{
+    color: #5898ff;
+}*/
+.main .shareContent .sharelist .shareText .score{
+    margin-top: 10px;
+}
+.main .shareContent .sharelist .shareText .score div{
+    margin-right: 15px;
+    display: inline-block;
+}
+.main .shareContent .sharelist .shareText .score div span{
+   color: rgba(0,0,0,.5);
+}
+.main .shareContent .sharelist .shareText .score div img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+.main .shareContent .sharelist .video_audio{
+    padding: 20px 87px;
+}
+.main .shareContent .sharelist .video_audio div{
+    margin-top: 20px;
+}
+.main .shareContent .sharelist .video_audio div .audio{
+    background: #f67057;
+    color: #fff;
+    padding: 3px 10px;
+    margin-right:15px;
+}
+.main .shareContent .sharelist .video_audio div .audio img{
+    width: 16px;
+    margin-right:15px;
+
+}
+
+.main .shareContent .sharelist .video_audio div .video{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin-right:20px;
+    background: #000;
+}
+.main .shareContent .sharelist .video_audio div .Interaction{
+    margin-right:70px;
+}
+.main .shareContent .sharelist .video_audio div .Interaction img{
+    width: 15px;
+    margin-right:10px;
+}
+.main .shareContent .sharelist .video_audio div .Interaction span{
+    margin-right:10px;
+}
+.main .shareContent .sharelist .video_audio div .comment{
+    background: #ccc;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px;
+}
+.main .shareContent .sharelist .video_audio div .comment img{
+   
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+
+}
+
+.main .shareContent .sharelist .notHomework{
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+
+}
+.main .shareContent .sharelist .notHomework div{
+    margin-top:50px;
+}
+.main .shareContent .sharelist .notHomework div p{
+    margin: 20px;
+}
+.main .shareContent .sharelist .notHomework div p span{
+    color: red;
+}

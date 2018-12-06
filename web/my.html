@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的</title>
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- 课程表样式 -->
+	<link rel="stylesheet" href="./css/my.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/sess.js"></script>
+	<script src="js/APIConnection.min.js"></script>
+    <script src="js/stacktrace.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+	<header>
+        <div class="head">
+            <div class="logo">
+                <!-- <img src="" alt="Logo"> -->
+                <a href="/"><span style="font-size: 30px">LOGO</span></a>
+            </div>
+            <div class="daohan" id="daohan">
+                <ul>
+                    <li><a href="classSchedule.html">课程表</a></li>
+                    <li><a href="studyEncircle.html">学习+圈子</a></li>
+                    <li><a href="find.html">发现</a></li>
+                    <li><a href="my.html" class="active">我的</a></li>
+                </ul>
+                <a class="user" href="login.html">
+                    <div class="ant-botton">
+                        <div class="login-icon"><img src="images/login.png" alt=""></div>
+                        
+                        <span>登录</span>
+                    </div>
+                </a>
+                <a class="user">
+                    <div class="ant-botton">
+                        <div class="login-icon"><img src="images/login.png" alt=""></div>
+                        
+                        <span id="user"></span>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+	<script src="./js/header.js"></script>
+	<div class="main clearfix">
+		<div class="mainContent">
+			<div class="left">
+				<div class="avator">
+					<img src="./images/avator.jpg" alt="">
+				</div>
+				<p class="stuName">大猫</p>
+
+				<script type="text/javascript">
+					var stuname = document.getElementsByClassName('stuName')[0];
+					stuname.innerHTML = user_info.name;
+				</script>
+
+				<div class="stuLevel">
+						<span>lv2</span> <progress value='40' max='100'></progress>
+				</div>
+			</div>
+			<div class="right">
+				<section class="myOrder commonWhite">
+						<img class="w30h30" src="./images/order.png" alt="">
+						<a id="order" href="javascript:;">
+							<span>我的订单</span>
+							<img class="rightArr" src="./images/right.png" alt="">
+						</a>
+				</section>
+				<section class="myInfo commonWhite">
+						<img class="w30h30" src="./images/info.png" alt="">
+						<a id="info" href="javascript:;">
+							<span>我的信息</span>
+							<img class="rightArr" src="./images/right.png" alt="">
+						</a>
+				</section>
+				<section class="setting commonWhite">
+						<img class="w30h30" src="./images/setting.png" alt="">
+						<a id="set" href="javascript:;">
+							<span>设置</span>
+							<img class="rightArr" src="./images/right.png" alt="">
+						</a>
+				</section>
+			</div>
+		</div>
+		<!-- 我的订单 -->
+		<div class="myOrderPart hide">
+			<h4>我的订单</h4>
+			<div class="back">
+				<img src="./images/back.png" ><span>返回上一页</span>
+			</div>
+			<hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+			<div class="orderTable">
+				<table >
+					<thead>
+						<th >书名</th>
+						<th >购买日期</th>
+						<th class="brc btc">订单号</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>宝葫芦的秘密</td>
+							<td>2018-10-10</td>
+							<td >12561521383782738237861256</td>
+						</tr>
+						<tr>
+							<td >宝葫芦的秘密</td>
+							<td >2018-10-10</td>
+							<td >12561521383782738237861256</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script>
+			var orderParam={
+				"obj":"orderList",
+				"act":"get"
+			}
+			send(orderParam)
+			setTimeout(getOrder,500);
+			function getOrder(){
+				console.log(data);
+			}
+
+		</script>
+		<!-- 我的信息 -->
+		<div class="myInfoPart hide">
+			<h4>我的信息</h4>
+			<div class="infoBack">
+				<img src="./images/back.png" ><span>返回上一页</span>
+			</div>
+			<hr style="width: 94%;margin: 0 auto 10px;height:1px;border:none;border-top:1px solid #c7c800;">
+			<div class="infoList">
+				<ul>
+					<li><span>头像</span><img src="./images/avator.jpg" alt=""></li>
+					<li><span>名字</span><span id="name">李萨克</span></li>
+					<li><span>性别</span><span id="sex">女</span></li>
+					<li><span>学校</span><span id="school">福州实验小学</span></li>
+					<li><span>班级</span><span id="class">三年级一班</span></li>
+					<li><span>我的账号</span><span id="bank">15829381839</span></li>
+				</ul>
+				<input type="button" value="确定修改"/>
+				<!-- --- -->
+				<script>
+					userInit();
+					function userInit(){
+						var _username = document.getElementById('name');
+						var _sex = document.getElementById('sex');
+						var _school = document.getElementById('school');
+						var _class = document.getElementById('class');
+						var _bank = document.getElementById('bank');
+						_username.innerHTML = user_info.name;
+						_sex.innerHTML = user_info.sex;
+						_school.innerHTML = user_info.school;
+						_class.innerHTML = user_info.grade+user_info.class;
+						_bank.innerHTML = user_info.display_name;
+					}
+				</script>
+				<!-- --- -->
+			</div>
+		</div>
+	</div>
+	<script>
+		var info = document.getElementsByClassName('myInfo')[0];
+		var myInfoPart = document.getElementsByClassName('myInfoPart')[0];
+		var mainContent = document.getElementsByClassName('mainContent')[0];
+		var infoBack = document.getElementsByClassName('infoBack')[0];
+		var order = document.getElementsByClassName('myOrder')[0];
+		var back = document.getElementsByClassName('back')[0];
+		var myOrderPart = document.getElementsByClassName('myOrderPart')[0];
+		info.onclick=function(){
+			myInfoPart.style.display = 'block';
+			mainContent.style.display = 'none';
+		}
+		infoBack.onclick = function(){
+			myInfoPart.style.display = 'none';
+			mainContent.style.display = 'block';
+		}
+		order.onclick=function(){
+			myOrderPart.style.display = 'block';
+			mainContent.style.display = 'none';
+		}
+		back.onclick=function(){
+			myOrderPart.style.display = 'none';
+			mainContent.style.display = 'block';
+		}
+	</script>
+</body>
+</html>

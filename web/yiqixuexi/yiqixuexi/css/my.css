@@ -1,0 +1,243 @@
+/* 公共类---设置图片大小 */
+.w30h30{
+    width: 26px;
+    height: 26px;
+}
+.commonWhite{
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/* 私有样式 */
+.main{
+    width: 1600px;
+    margin: 0 auto;
+    height: 900px;
+    text-align: center;
+    background-image:url(../images/myBk.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 275px 0 0 360px;
+    box-sizing: border-box;
+    /* -moz-background-size:100% 100%; */
+}
+.main .mainContent{
+    width: 90%;
+    height: 400px;
+}
+.main .mainContent .left{
+    width: 20%;
+    float: left;
+    margin-right: 100px;
+}
+.main .mainContent .left .stuName{
+    margin: 20px 0;
+}
+.main .mainContent .left .stuLevel progress{
+    border-radius: 40px;
+    color: #5091e4;
+    height: 14px;
+}
+progress::-webkit-progress-inner-element { border-radius: 40px; }
+progress::-webkit-progress-value { border-radius: 40px; }
+progress::-webkit-progress-bar { border-radius: 40px; }
+.main .mainContent .left img{
+    width: 160px;
+    height: 160px;
+    border-radius: 200%;
+    border: 20px solid #fff;
+}
+.main .mainContent .right{
+    float: left;
+    width: 70%;
+    margin-top: 100px;
+}
+.rightArr{
+    width: 15px;
+    height: 20px;
+}
+.mainContent .right .myOrder, .mainContent .right .myInfo, .mainContent .right .setting{
+    width: 55%;
+    height: 50px;
+    line-height: 60px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.main .right .myOrder>img, .main .right .myInfo>img, .main .right .setting>img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px 25px 0 0 ;
+}
+.main .right .myOrder a, .main .right .myInfo a, .main .right .setting a{
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    justify-content: space-between;
+}
+.main .right .myOrder a img, .main .right .myInfo a img, .main .right .setting a img{
+    vertical-align: middle;
+    margin-top: 15px;
+}
+/* 我的订单 */
+.myOrderPart{
+    width: 60%;
+    height: 85%;
+    margin-top: -185px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.myOrderPart h4{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+}
+/* 后退按钮 */
+.myOrderPart .back {
+    text-align: left;
+    padding-top: 10px;
+    margin: 0px 0 20px 20px ;
+}
+.myOrderPart .back img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.myOrderPart .back span{
+    color: #c7c800;
+}
+.myOrderPart .orderTable table{
+    margin: 50px auto 0 ;
+    border: none;
+}
+.myOrderPart .orderTable table thead th, .myOrderPart .orderTable table tbody tr{
+    height: 35px;
+   font-weight: 400;
+   font-size: 18px;
+}
+.myOrderPart .orderTable table thead th{
+    border-color: #c5c804;
+    border-top-color: transparent;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.myOrderPart .orderTable table thead th:first-child{
+    border-color: #c5c804;
+    border-top-color: transparent; 
+    border-left-color: transparent; 
+}
+.myOrderPart .orderTable table thead th:last-child{
+    border-color: #c5c804;
+    border-top-color: transparent; 
+    border-right-color: transparent; 
+}
+.myOrderPart .orderTable table tbody tr td{
+   border-color: #c5c804;
+   padding: 15px;
+   box-sizing: border-box;
+}
+.myOrderPart .orderTable table tbody tr td:first-child{
+    border-color: #c5c804;
+    border-left-color: transparent; 
+}
+.myOrderPart .orderTable table tbody tr td:last-child{
+    border-color: #c5c804;
+    border-right-color: transparent; 
+}
+.myOrderPart .orderTable table tbody tr:last-child td:first-child{
+    border-color: #c5c804;
+    border-left-color: transparent; 
+    border-bottom-color: transparent; 
+}
+.myOrderPart .orderTable table tbody tr:last-child td{
+    border-color: #c5c804;
+    border-bottom-color: transparent; 
+}
+.myOrderPart .orderTable table tbody tr:last-child td:last-child{
+    border-color: #c5c804;
+    border-right-color: transparent; 
+    border-bottom-color: transparent; 
+}
+/* 我的信息 */
+.myInfoPart{
+    width: 60%;
+    height: 85%;
+    margin-top: -185px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.myInfoPart h4{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+}
+.myInfoPart .infoBack {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 20px ;
+    margin-bottom: 10px;
+}
+.myInfoPart .infoBack img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.myInfoPart .infoBack span{
+    color: #c7c800;
+}
+.myInfoPart .infoList ul{
+    margin: 0 auto;
+    height: 360px;
+}
+.myInfoPart .infoList ul li{
+    float: left;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: -3px 3px rgba(220, 220, 220, .3);
+}
+.myInfoPart .infoList ul li:first-child{
+    height: 90px;
+    line-height: 90px;
+}
+.myInfoPart .infoList ul li:first-child img{
+   width: 60px;
+   height: 60px;
+   border-radius: 200%;
+}
+.myInfoPart .infoList input{
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border: medium;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0;
+    background-color: #c5c804;
+    cursor: pointer;
+}

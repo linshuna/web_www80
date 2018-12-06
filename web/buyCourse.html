@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/buyCourse.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="head">
+            <div class="logo">
+                <!-- <img src="" alt="Logo"> -->
+                <a href="/"><span style="font-size: 30px">LOGO</span></a>
+            </div>
+            <!-- <div class="daohan">
+                <ul>
+                    <li><a href="">课程表</a></li>
+                    <li><a href="">学习+圈子</a></li>
+                    <li><a href="">发现</a></li>
+                    <li><a href="">我的</a></li>
+                </ul>
+                <a href="#">
+                    <div class="ant-botton">
+                        <div class="login-icon"><img src="images/login.png" alt=""></div>
+                        
+                        <span>登录</span>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+        <div class="main">
+            <div class="top">
+                <a href="find.html">
+                    <div id="back" class="back">
+                        <img src="./images/back.png" ><span>返回上一页</span>
+                    </div>
+                </a>
+                
+                <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+                <div class="detail">
+                    <div class="left">
+                        <div> <img src="./images/book.png" alt=""></div>
+                        <ul>
+                            <li><img src="./images/book.png" alt=""></li>
+                            <li><img src="./images/book.png" alt=""></li>
+                            <li><img src="./images/book.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <p>课程名称课程名称课程名称课程名称</p>
+                        <p>课程描述课程描述课程描述课程描述课程描述课程描述</p>
+                        <input  type="button" value="立即购买">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bottom"></div> -->
+        </div>
+        <div class="detailAndList">
+            <div class="detail" id="detail">详情</div>
+            <div class="list" id="list">目录</div>    
+            <div class="detailContent">
+                <div class="Content">课程详情</div>
+            </div>
+            <div class="listContent hide">
+                <ul>
+                    <li>
+                        <p style="text-align:left;margin-left:20px;">章节：<span>12</span></p>
+                        <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+                        <div>
+                            <span><img class="wh20" src="./images/daodu.png" alt="">导读</span>
+                            <span><img class="wh20" src="./images/fandu.png" alt="">范读</span>
+                            <span><img class="wh20" src="./images/langdu.png" alt="">朗读</span>
+                            <span><img class="wh20" src="./images/modu.png" alt="">默读</span>
+                            <span><img class="wh20" src="./images/test.png" alt="">测试</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var detail = document.getElementById('detail');
+        var list = document.getElementById('list');
+        var detailContent = document.getElementsByClassName('detailContent')[0];
+        var listContent = document.getElementsByClassName('listContent')[0];
+        detail.style.color = '#c7c800'
+        detailContent.style.display = 'block';
+        list.style.color= '#333';
+         listContent.style.display = 'none';
+            detail.onclick=function(){
+                detail.style.color= '#c7c800';
+                list.style.color= '#333';
+                detailContent.style.display = 'block';
+                listContent.style.display = 'none';
+            }
+            list.onclick = function(){
+                list.style.color= '#c7c800';
+                detail.style.color= '#333';
+                detailContent.style.display = 'none';
+                listContent.style.display = 'block';
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <style type="text/css">
+            body {
+                display: flex;
+                height: 95vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .container {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                background-color: #008B64;
+                transform: rotate(90deg);
+            }
+            .item {  
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-radius: 50%;
+                border: 84px solid transparent;
+                border-left-width: 0px;
+                border-right: 110px solid #A52A2A;
+                top: calc(50% - 84px);
+                left: 50%;
+                transform-origin: 0px 50%;
+            }
+            .item:nth-child(odd){
+                border-right-color: cornflowerblue;
+            }
+            .item:nth-child(even){
+                border-right-color: #A52A2A;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+        </div>
+        <script>
+            var item = document.getElementsByClassName('item');
+            for(var i = 0 ; i <item.length ; i++){
+                var angle = i * 60
+                item[i].style.transform = 'rotateZ('+angle+'deg)';
+            }
+        </script>
+    </body>
+</html>

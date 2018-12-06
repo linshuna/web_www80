@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modu.css">
+    <title>Document</title>
+</head>
+<body >
+    <div class="main">
+        <h5>默读</h5>
+        <div class="message">
+            <div class="top">
+                <img class="backMd" src="./images/back.png" ><span>返回上一页</span>
+            </div>
+            <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+            <div class="content moduWrongWrap">
+              <div class="msg">
+                <div class="innerTipWrap">
+                  <div class="innerTip">
+                    <p class="wrongTitle">你又答错了</p>
+                    <p class="wrongContent">错误提示</p>  
+                  </div>
+                  
+                </div>
+                
+              </div>
+              <input type="button" id="backMd" value="返回默读">    
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var backMd = document.getElementById('backMd');
+        // var mdContent = document.getElementsByClassName('message')[0];
+        // var confirmBtn = document.getElementById('confirmBtn');
+        // var wrongMd = document.getElementsByClassName('wrongMd')[0];
+        // confirmBtn.onclick = function(){
+        //     // mdContent.style.display = 'none'
+        //     wrongMd.style.display = 'block'
+        // }
+        // backMd.onclick = function(){
+        //     mdContent.style.display = 'block'
+        //     wrongMd.style.display = 'none'
+        // }
+        // var showM = document.getElementById('m');
+        // var showS = document.getElementById('s');
+        // // cutDownTime.onclick = function(){
+        // //     resetTime(300);
+        // // }
+        // //单纯分钟和秒倒计时
+        // function resetTime(time){
+        //     var timer=null;
+        //     var t=time;
+        //     var m=0;
+        //     var s=0;
+        //     m=Math.floor(t/60%60);
+        //     m<10&&(m='0'+m);
+        //     s=Math.floor(t%60);
+        //     function countDown(){
+        //         s--;
+        //         s<10&&(s='0'+s);
+        //         if(s.length>=3){
+        //             s=59;
+        //             m="0"+(Number(m)-1);
+        //         }
+        //         if(m.length>=3){
+        //             m='00';
+        //             s='00';
+        //             clearInterval(timer);
+        //         }
+        //         console.log(m+"分钟"+s+"秒");
+        //     showM.innerHTML = m
+        //     showS.innerHTML = s
+        //     }
+        //     timer=setInterval(countDown,1000);
+        // }
+        // resetTime(100)
+    </script>
+</body>
+</html>

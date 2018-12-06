@@ -1,0 +1,143 @@
+.main{
+    width: 1600px;
+    margin: 0 auto;
+    height: 900px;
+    text-align: center;
+    background-image:url(../images/bg.png); 
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+
+}
+.main .title-box-tab{
+    border-radius: 30px;
+    overflow: hidden;
+    background: #96a117;
+    margin: 80px auto;
+    display: inline-block;
+    padding: 0px 5px 3px 5px;
+}
+.main .title-tab{
+    border-radius: 30px;
+    background: #fff;
+    /*-moz-box-shadow: 0px 0px 0px 5px #96a117;
+    box-shadow: 0px 0px 0px 5px #96a117;*/
+}
+.main .title-tab .tab{
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgba(0,0,0,.5);
+
+    
+
+}
+.main .title-tab .tab-index{
+    border-radius: 30px;
+    color: #fff;
+    background: #c5c704;
+    transition: width,background 1s;
+}
+.main .classSchedule{
+    display: none;
+    text-align: center;
+    background: #000;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.main .classIndex{
+    display: block;
+}
+.main .classSchedule .titleTable{
+    font-size: 20px;
+    padding: 30px;
+    color: #4f90ea;
+}
+.main .classSchedule .courseTableList{
+    width: 100%;
+    /* letter-spacing: 5px; */
+    background: url('../images/classSchedule.png') no-repeat ;
+    height: 550px;
+     background-size:100% 100%;
+    -moz-background-size:100% 100%;
+
+}
+.main .classSchedule .courseTable{
+    height: 400px;
+    margin: 0 10px;
+    
+}
+/* 榜单 */
+.main .classSchedule .listTable{
+    width: 100%;
+    /* letter-spacing: 5px; */
+    background: url('../images/scheduleBackGround.png') no-repeat ;
+    height: 550px;
+     background-size:100% 100%;
+    -moz-background-size:100% 100%;
+
+}
+.main .classSchedule .listTable .title img{
+    width: 60%;
+    /* height: 30%; */
+    margin-top: 50px;
+}
+.main .classSchedule .listTable  .selectChapter{
+    text-align: right;
+    margin-right: 60px;
+    margin-top: -50px;
+}
+.main .classSchedule .listTable  .selectChapter .chapterList{
+    width: 80px;
+    height: 30px;
+    letter-spacing: 5px;
+}
+.main .classSchedule .listTable .NameList{
+    width: 450px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main .classSchedule .listTable .NameList span{
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+}
+.main .classSchedule .courseTable th,td{
+    border-style: solid;
+    padding:10px 5px;
+    border-width: 1px;
+    border-color: #b8b8b9;
+}
+.main .classSchedule .courseTable th{
+
+    letter-spacing: 10px;
+}
+.main .classSchedule .courseTable td{
+    padding: 20px 35px;
+    text-align: left;
+}
+.main .classSchedule .courseTable thead{
+    color:rgba(0,0,0,.5);
+}
+.main .classSchedule .paging{
+    text-align: center;
+   /* position: relative;
+    bottom: 0;*/
+    line-height: 50px;
+}
+.main .classSchedule .paging .paging-boder{
+    border:1px #000 solid; 
+    max-width: 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: auto 10px;
+    cursor:pointer;
+}
+.main .classSchedule .paging .paging-index{
+    border-color: #4b93e8;
+    color: #4b93e8;
+}

@@ -1,0 +1,168 @@
+/* 公共类---设置图片大小 */
+.w30h30{
+    width: 26px;
+    height: 26px;
+}
+.commonWhite{
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/* 私有样式 */
+.main{
+    width: 1600px;
+    margin: 0 auto;
+    height: 900px;
+    text-align: center;
+    background-image:url(../images/myBk.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 275px 0 0 360px;
+    box-sizing: border-box;
+    /* -moz-background-size:100% 100%; */
+}
+.main .mainContent{
+    width: 90%;
+    height: 400px;
+}
+.main .mainContent ul li{
+    width: 250px;
+    /* height: 340px; */
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+.main .mainContent ul li span{
+    display: block;
+}
+.main .mainContent ul li span:first-child{
+    margin-top: 20px;
+}
+.main .mainContent ul li img{
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+.main .mainContent ul li span:last-child{
+    margin-bottom: 20px;
+}
+.main .mainContent ul li input{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: blue;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0 20px 80px;
+    cursor: pointer;
+}
+.main .mainContent ul li:hover input{
+    display: block;
+}
+/* 我的订单 */
+.payMethods{
+    width: 60%;
+    height: 85%;
+    margin-top: -185px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.payMethods h4{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+}
+/* 后退按钮 */
+.payMethods .back {
+    text-align: left;
+    padding-top: 10px;
+    margin: 0px 0 20px 20px ;
+}
+.payMethods .back img{
+    width:45px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.payMethods .back span{
+    color: #c7c800;
+}
+.payMethods .payments{
+    /* text-align: left;
+    display: flex;
+    justify-content: space-around; */
+}
+.payMethods .payments p{
+    margin: 20px 0;
+    text-align: left;
+    padding-left: 50px;
+}
+.payMethods .payments .twoPay span{
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #c5c804;
+    background-color: #fdfe9e;
+    border-radius: 10px;
+}
+.payMethods .payments .twoPay a{
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #eeeeee;
+}
+.payMethods .payments .coupon p{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.payMethods .payments .coupon span{
+    vertical-align: middle;
+}
+.payMethods .payments .coupon img{
+    width: 12px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.payMethods .payments input{
+    width: 140px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin: 40px auto 0;
+    line-height: 40px;
+    text-align: center;
+    background-color: #c5c804;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程表</title>
+	<!-- 公共样式 -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 课程表样式 -->
+	<link rel="stylesheet" href="css/classSchedule.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head">
+			<div class="logo">
+				<!-- <img src="" alt="Logo"> -->
+				<a href="/"><span style="font-size: 30px">LOGO</span></a>
+			</div>
+			<div class="daohan">
+				<ul>
+					<li><a href="">课程表</a></li>
+					<li><a href="">学习+圈子</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="">我的</a></li>
+				</ul>
+				<a href="#">
+					<div class="ant-botton">
+						<div class="login-icon"><img src="images/login.png" alt=""></div>
+						
+						<span>登录</span>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</header>
+	<div class="main">
+		<div class="title-box-tab">
+			<div class="title-tab">
+				<div class="tab tab-index">课程表</div>
+			    <div class="tab">榜单</div>
+			</div>
+		</div>
+		<script src="js/tabTable.js"></script>
+		<div class="classSchedule classIndex">
+			<div  class="courseTableList">
+				<div class="titleTable">
+					<span >宝葫芦的秘密</span>
+				</div>
+				
+				<div  class="courseTable">
+					<table style="width: 100%">
+						<thead>
+							<th>序号</th>
+							<th>阅读<br>章节</th>
+							<th>阅读<br>页码</th>
+							<th>起始<br>时间</th>
+							<th>完成<br>时间</th>
+							<th>阅读<br>天数</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>意外得到宝葫芦</td>
+								<td>P11-P12</td>
+								<td>08：06</td>
+								<td>09：06</td>
+								<td>4天</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging">
+					<span class="paging-boder">上一页</span>
+					<span>
+						<a class="paging-boder paging-index">1</a>
+					</span>
+					<span class="paging-boder">下一页</span>
+					<span>共</span>
+					<span><input class="paging-boder" type="text"></span>
+					<span>页</span>
+					<span id="send" class="paging-boder " style="background: #4b93e8;border-color: #fff">跳转</span>
+					
+				</div>
+			</div>
+			<script src="js/ajax.js"></script>
+			
+		</div>
+		<!-- 榜单 -->
+		<div class="classSchedule">
+			<div  class="listTable">
+				<div class="title">
+					<img src="images/bsym.png">
+				</div>
+				<div class="selectChapter">
+					<select name="" id="" class="chapterList">
+						<option value="">章节1</option>
+						<option value="">章节2</option>
+						<option value="">章节3</option>
+					</select>
+				</div>
+				<hr style="width:650px;margin: 50px auto 0;background-color:#eee;height:0px;">
+				<div class="NameList">
+					<span>张三1</span>
+					<span>张三2</span>
+					<span>张三3</span>
+					<span>张三4</span>
+					<span>张三5</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+					<span>张三6</span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
