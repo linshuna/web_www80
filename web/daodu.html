@@ -19,7 +19,7 @@
         </div>
         <div class="mainContent ">
             <div class="top">
-                <p class="ldTitle">范读</p>
+                <p class="ldTitle">导读</p>
                 <h4 >第一章：宝葫芦的秘密</h4>
                 <p style="font-size:14px;">章节:<span>pm-12</span> </p>
                 <div class="content">
@@ -80,14 +80,15 @@
         let main = document.getElementsByClassName('main')[0];
         let ldFinsih = document.getElementsByClassName('ldFinsih')[0];
         let changeModel = document.getElementsByClassName('changeModel')[0];
-        
+
         var audio = document.getElementById("audioPlay");
         var finish = document.getElementsByClassName("finish")[0] 
         audio.loop = false;
         audio.addEventListener('ended', function () {  
             finish.style.display = "inline-block"
-            localStorage.setItem("liucheng",3);
+            localStorage.setItem("liucheng",2);
         }, false);
+
     </script>
 </body>
 </html>

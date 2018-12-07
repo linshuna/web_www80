@@ -10,12 +10,14 @@
     box-sizing: border-box;
 }
 .main h5{
-   font-size: 18px;
+    font-size: 18px;
+    padding: 20px 0;
 }
 .main .message{
     width: 45%;
     padding-top: 20px;
-    margin: 60px auto;
+    /*margin: 60px auto;*/
+    margin: 0 auto;
     text-align: center;
     background: #fff;
     border-radius: 10px;

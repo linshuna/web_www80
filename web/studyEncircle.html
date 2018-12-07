@@ -11,6 +11,31 @@
     <script src="js/APIConnection.min.js"></script>
     <script src="js/stacktrace.min.js"></script>
     <script src="js/app.js"></script>
+    <style>
+      /* .fandu,.langdu{
+        border-radius: 100px 0 0;
+        background: red;
+        width: 100px!important;
+        height: 100px!important;
+        background-image: none!important;
+      }
+      .fandu{
+        transform: rotate(45deg)!important;
+        margin: -40px 0 0 -20px;
+      }
+      .langdu{} */
+      .back{ background-image: url("images/6.png")!important;}
+      .daodu{ z-index: 1!important; }
+      .fandu{ z-index: 2!important;}
+      .active_2{ z-index: 2!important; background-image: url("./images/1.png")!important;}
+      .langdu{ z-index: 3!important;}
+      .active_3{ z-index: 3!important; background-image: url("./images/2.png")!important;}
+      .modu{ z-index: 4!important;}
+      .active_4{ z-index: 4!important; background-image: url("./images/3.png")!important;}
+      .exam{ z-index: 5!important;}
+      .active_5{ z-index: 5!important; background-image: url("./images/4.png")!important;}
+
+    </style>
 </head>
 <body>
     <header>
@@ -48,21 +73,48 @@
     <div class="main">
         <div class="mainTop">
             <div class="zhuangpan">
-                <a href="fandu.html">
-                    <div class="triangle"><div class="triangleDiv"><img src="./images/fandu_f.png" alt=""><span>范读</span></div></div>
-                </a>
-                <a href="langdu.html">
-                    <div class="triangle"><div class="triangleDiv"><img src="./images/langdu_f.png" alt=""><span>朗读</span></div></div>
-                </a>
-                <a href="modu.html">
-                    <div class="triangle"><div class="triangleDiv"><img src="./images/modu_f.png" alt=""><span>默读</span></div></div>
-                </a>
-                <a href="exam.html">
-                    <div class="triangle"><div class="triangleDiv"><img src="./images/ceshi_f.png" alt=""><span>测试</span></div></div>
-                </a>
-                <a href="daodu.html">
-                    <div class="triangle"><div class="triangleDiv"><img src="./images/daodu_f.png" alt=""><span>导读</span></div></div>
-                </a>
+                
+                <div class="triangle fandu back">
+                  <a href="fandu.html">
+                    <div class="triangleDiv">
+                      <img src="./images/fandu_f.png" alt="">
+                      <span>范读</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="triangle langdu back">
+                  <a href="langdu.html">
+                    <div class="triangleDiv">
+                      <img src="./images/langdu_f.png" alt=""><span>朗读</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="triangle modu back">
+                  <a href="modu.html">
+                    <div class="triangleDiv">
+                      <img src="./images/modu_f.png" alt=""><span>默读</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="triangle exam back">
+                  <a href="exam.html">
+                    <div class="triangleDiv">
+                      <img src="./images/ceshi_f.png" alt=""><span>测试</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="triangle daodu">
+                  <a href="daodu.html">
+                    <div class="triangleDiv">
+                      <img src="./images/daodu_f.png" alt=""><span>导读</span>
+                    </div>
+                  </a>
+                </div>
+                
                 
                 <!-- <div class="triangle"><img src="./images/6.png" alt=""></div> -->
                 <div class="Pointer">
@@ -244,6 +296,14 @@
                shareBotton[i].className = "shareBotton";
                shareContent[i].style.display = 'none'
             }
+        }
+        var state = localStorage.getItem("liucheng");
+        if(state){
+          for(var i = 0,len = state-2;i < len;i++){
+            console.log(i)
+            $(".triangle").eq(i).removeClass("back")
+          }
+          $(".triangle").eq(state-2).removeClass("back").addClass("active_"+state)
         }
     </script>
 </body>
