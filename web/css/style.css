@@ -156,7 +156,7 @@ header .active{
   box-shadow: 0 3px 10px 4px rgba(0,0,0,.1);
 }
 .loAndRe .messageInner form{
-  padding-top: 45px;
+  padding: 45px 20px 0 20px;
 }
 .loAndRe .messageInner section{
   padding-top: 45px;

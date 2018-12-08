@@ -40,9 +40,15 @@ body{
   
 }
 .message .content{
+<<<<<<< HEAD
   /* display: none; */
   width: 100%;
   height: 480px;
+=======
+    /* display: none; */
+    width: 100%;
+    height: 480px;
+>>>>>>> 963c462d5d712612799819cabcbe5942e4cabb77
 }
 .message  .top {
   text-align: left;
@@ -101,11 +107,19 @@ font-weight: 600;
   position: absolute;
 }
 .money{
+<<<<<<< HEAD
   width: 80%;
   margin: 20px auto;
   margin-top: 10px;
   display: flex;
   justify-content: center;
+=======
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+>>>>>>> 963c462d5d712612799819cabcbe5942e4cabb77
 }
 .money img{
   width: 45px;
@@ -139,6 +153,7 @@ font-weight: 600;
 }
 /* 测试结果部分 */
 .message .result{
+<<<<<<< HEAD
   width: 100%;
   padding-top: 20px;
   margin: 60px auto;
@@ -158,6 +173,27 @@ font-weight: 600;
   border: 1px dashed #333;
   text-align: center;
   
+=======
+    width: 100%;
+    padding-top: 20px;
+    margin: 60px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 10px 0 rgba(0,0,0,.2); */
+    display: none;
+}
+.message .result .examResult{
+    width: 246px;
+    height: 246px;
+    margin: 0 auto ;
+    line-height: 54px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: 1px dashed #333;
+    text-align: center;
+    
+>>>>>>> 963c462d5d712612799819cabcbe5942e4cabb77
 }
 .message .result .examResult p{
   text-align: center;
