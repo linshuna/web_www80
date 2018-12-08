@@ -1,6 +1,28 @@
 
 
+/* 公共样式 */
+.borderRight{
+  border-right: 1px solid #bfbfbf;
+  box-sizing: border-box;
+}
 
+/* 主要内容的样式 */
+.main{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  /* width: 50%; */
+  width: 1000px;
+  margin: 0 auto;
+}
+.head{
+  width: 100%;
+  line-height: 70px;
+}
+.head a{
+  color: #c7c800;
+}
 .main .detail .right input{
     width:150px;
     height:30px;
@@ -14,13 +36,14 @@
     display: none;
 }
 .top{
-    width: 60%;
-    height: 85%;
+    width: 100%;
+    height: 580px;
     /* margin-top: -185px; */
-    margin: 40px auto 200px;
+    /* margin: 40px auto 200px; */
     text-align: center;
     background-color: #fff;
     position: relative;
+    border-radius: 10px;
 }
 /* 后退按钮 */
 .top .back {
@@ -83,51 +106,98 @@
 }
 /* 详情和目录 */
 .detailAndList{
-    width: 60%;
-    height: 85%;
-    margin: -185px auto 0;
-    text-align: center;
-    background-color: #fff;
-    text-align: left;
+  width: 100%;
+  height: 85%;
+  /* margin: -185px auto 0; */
+  text-align: center;
+  background-color: #fff;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 10px;
 }
-.detailAndList>div{
+.detailAndList .detailInnder{
+  width: 100%;
+  height: 40px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0;
+  border-radius: 0 10px 0 0;
+}
+.detailAndList .detailInnder>div{
     display: inline-block;
     text-align: center;
-    width: 100px;
+    width: 120px;
     height: 40px;
-    line-height: 40px;
+    /* line-height: 40px; */
+    padding: 10px 0;
+    box-sizing: border-box;
     cursor: pointer;
+    background: #fff;
+    font-size: 14px;
+    border-top: 2px solid transparent;
+}
+.detailAndList .detailInnder>div:first{
+  border-radius: 8px 0 0 0;
+}
+.detailAndList .detailInnder>div span{
+    width: 100%;
+    display: inline-block;
+    height: 20px;
+}
+.detailAndList .detailInnder>div.active{
+  color: #c7c800;
+  border-top: 2px solid #c7c800;
+}
+
+.detailInnderContent{
+  margin: 20px auto;
 }
 .detailAndList .detailContent, .detailAndList .listContent{
     width: 100%;
     height: 300px;
-    padding: 20px;
-    
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .detailAndList .detailContent .Content{
     width: 100%;
     height: 100%;
     font-size: 30px;
+    text-align: center;
+    background: #eeeeee;
 }
 .wh20{
     width: 20px;
     height: 20px;
     vertical-align: middle;
+    padding-right: 10px
 }
 .detailAndList .listContent ul{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 20px auto;
 }
 .detailAndList .listContent ul li{
     width: 100%;
     text-align: left;
-    box-shadow: 2px 2px rgba(222, 222, 222, .8);
+    box-shadow: 2px 4px 4px 1px rgba(222, 222, 222, .8);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 .detailAndList .listContent ul li div{
     display: flex;
     justify-content: space-around;
 }
+.detailAndList .listContent ul li .listTitle{
+  text-align:left;
+  margin-left:20px;
+  line-height: 40px;
+}
 .detailAndList .listContent ul li div span{
     display: inline-block;
-    width: 100px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 14px;
 }

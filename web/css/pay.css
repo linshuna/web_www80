@@ -80,6 +80,7 @@
     text-align: center;
     background-color: #fff;
     position: relative;
+    border-radius: 10px;
 }
 .payMethods h4{
     position: absolute;
@@ -89,7 +90,7 @@
 /* 后退按钮 */
 .payMethods .back {
     text-align: left;
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0px 0 20px 20px ;
 }
 .payMethods .back img{

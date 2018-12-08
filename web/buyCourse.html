@@ -8,31 +8,33 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/buyCourse.css">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div>
-        <div class="head">
-            <div class="logo">
-                <!-- <img src="" alt="Logo"> -->
-                <a href="/"><span style="font-size: 30px">LOGO</span></a>
-            </div>
-            <!-- <div class="daohan">
-                <ul>
-                    <li><a href="">课程表</a></li>
-                    <li><a href="">学习+圈子</a></li>
-                    <li><a href="">发现</a></li>
-                    <li><a href="">我的</a></li>
-                </ul>
-                <a href="#">
-                    <div class="ant-botton">
-                        <div class="login-icon"><img src="images/login.png" alt=""></div>
-                        
-                        <span>登录</span>
-                    </div>
-                </a>
-            </div> -->
-        </div>
+        
         <div class="main">
+            <div class="head">
+                <div class="logo">
+                    <!-- <img src="" alt="Logo"> -->
+                    <a href="/"><span style="font-size: 30px">LOGO</span></a>
+                </div>
+                <!-- <div class="daohan">
+                    <ul>
+                        <li><a href="">课程表</a></li>
+                        <li><a href="">学习+圈子</a></li>
+                        <li><a href="">发现</a></li>
+                        <li><a href="">我的</a></li>
+                    </ul>
+                    <a href="#">
+                        <div class="ant-botton">
+                            <div class="login-icon"><img src="images/login.png" alt=""></div>
+                            
+                            <span>登录</span>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
             <div class="top">
                 <a href="find.html">
                     <div id="back" class="back">
@@ -58,51 +60,68 @@
                 </div>
             </div>
             <!-- <div class="bottom"></div> -->
-        </div>
-        <div class="detailAndList">
-            <div class="detail" id="detail">详情</div>
-            <div class="list" id="list">目录</div>    
-            <div class="detailContent">
-                <div class="Content">课程详情</div>
+            <div class="detailAndList">
+              <div class="detailInnder">
+                <div class="detail detailDiv active" id="detail">
+                  <span class="borderRight">详情</span>
+                </div>
+                <div class="list detailDiv" id="list">目录</div>    
+              </div> 
+              <div class="detailInnderContent">
+                <div class="detailContent detailContentDiv">
+                    <div class="Content">课程详情</div>
+                </div>
+                <div class="listContent hide detailContentDiv">
+                    <ul>
+                        <li>
+                            <p class="listTitle">章节：<span>12</span></p>
+                            <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
+                            <div>
+                                <span><img class="wh20" src="./images/daodu.png" alt="">导读</span>
+                                <span><img class="wh20" src="./images/fandu.png" alt="">范读</span>
+                                <span><img class="wh20" src="./images/langdu.png" alt="">朗读</span>
+                                <span><img class="wh20" src="./images/modu.png" alt="">默读</span>
+                                <span><img class="wh20" src="./images/test.png" alt="">测试</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
+              </div>
+              
             </div>
-            <div class="listContent hide">
-                <ul>
-                    <li>
-                        <p style="text-align:left;margin-left:20px;">章节：<span>12</span></p>
-                        <hr style="width: 94%;margin: 0 auto;height:1px;border:none;border-top:1px solid #c7c800;">
-                        <div>
-                            <span><img class="wh20" src="./images/daodu.png" alt="">导读</span>
-                            <span><img class="wh20" src="./images/fandu.png" alt="">范读</span>
-                            <span><img class="wh20" src="./images/langdu.png" alt="">朗读</span>
-                            <span><img class="wh20" src="./images/modu.png" alt="">默读</span>
-                            <span><img class="wh20" src="./images/test.png" alt="">测试</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
+        
     </div>
     <script>
-        var detail = document.getElementById('detail');
-        var list = document.getElementById('list');
-        var detailContent = document.getElementsByClassName('detailContent')[0];
-        var listContent = document.getElementsByClassName('listContent')[0];
-        detail.style.color = '#c7c800'
-        detailContent.style.display = 'block';
-        list.style.color= '#333';
-         listContent.style.display = 'none';
-            detail.onclick=function(){
-                detail.style.color= '#c7c800';
-                list.style.color= '#333';
-                detailContent.style.display = 'block';
-                listContent.style.display = 'none';
-            }
-            list.onclick = function(){
-                list.style.color= '#c7c800';
-                detail.style.color= '#333';
-                detailContent.style.display = 'none';
-                listContent.style.display = 'block';
-            }
+        // var detail = document.getElementById('detail');
+        // var list = document.getElementById('list');
+        // var detailContent = document.getElementsByClassName('detailContent')[0];
+        // var listContent = document.getElementsByClassName('listContent')[0];
+        // detail.style.color = '#c7c800'
+        // detailContent.style.display = 'block';
+        // list.style.color= '#333';
+        // listContent.style.display = 'none';
+        // detail.onclick=function(){
+        //     detail.style.color= '#c7c800';
+        //     list.style.color= '#333';
+        //     list.style.borderTop = "1px solid #c7c800"
+        //     detailContent.style.display = 'block';
+        //     listContent.style.display = 'none';
+        // }
+        // list.onclick = function(){
+        //     list.style.color= '#c7c800';
+        //     detail.style.color= '#333';
+        //     list.style.borderTop = "1px solid #c7c800"
+        //     detailContent.style.display = 'none';
+        //     listContent.style.display = 'block';
+        // }
+        var detailObj = $(".detailInnderContent").children();
+        $(".detailInnder").on("click",".detailDiv",function(){
+          $(this).addClass("active").siblings().removeClass("active")
+          var index = $(this).index();
+          detailObj.hide()
+          detailObj.eq(index).show()
+        })
     </script>
 </body>
 </html>

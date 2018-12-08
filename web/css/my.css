@@ -27,7 +27,10 @@ body{
     background-repeat: no-repeat;
 }
 .main{
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 1000px;
     margin: 0 auto;
    /* height: 900px;*/
@@ -44,10 +47,7 @@ body{
     height: 400px;
     align-items: center;
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    
 }
 .main .mainContent .left{
     width: 30%;
@@ -204,6 +204,7 @@ progress::-webkit-progress-bar { border-radius: 40px; }
     border-radius: 10px;
     justify-content: center;
     /*height: 400px;*/
+    height: 580px;
     position: absolute;
     top: 50%;
     left: 50%;

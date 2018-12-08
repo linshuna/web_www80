@@ -9,11 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main">
-        <div class="message">
+    <div class="main loAndRe">
+        <div class="message findPasswordWrap">
+          <div class="messageInner" style="background: #fff;">
             <form class="count" action="">
-                <input id="name" type="text" placeholder="请输入账号" value="13763802136">
-                <input id="password" type="password" placeholder="请输入密码" value="123456">
+                <p>
+                    <img src="./images/countNum.png" alt="">
+                    <input id="name" type="text" placeholder="请输入账号" value="13763802136">
+                </p>
+                <p>
+                    <img src="./images/countPas.png" alt="">
+                    <input id="password" type="password" placeholder="请输入密码" value="123456">
+                </p>
                 <input type="button" id="login" value="立即登录" class="submitBtn">
             </form>
             <div class="twoMethods">
@@ -27,6 +34,8 @@
                 </div>
                 
             </div>
+          </div>
+            
             <script src="js/sess.js"></script>
             <script src="js/APIConnection.min.js"></script>
             <script src="js/stacktrace.min.js"></script>
@@ -51,9 +60,7 @@
                      loginObj.login_name = name;
                      loginObj.login_passwd = password;
                      login(loginObj)
-
                 }
-
             </script>
         </div>
     </div>
